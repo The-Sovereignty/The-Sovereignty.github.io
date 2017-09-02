@@ -12,7 +12,7 @@
 	<script src="../js/konami.js"></script>
 	<script src="../js/copytext.js"></script>
 	<script src="../js/changeBackground.js"></script>
-	<script src="../js/EdsmAPI.js"></script>
+	<script src="../js/SovData.js"></script>
 	
 	
 	<img id="background" src="https://pbs.twimg.com/profile_images/751168765191081988/3y6h5fRA_400x400.jpg"/>
@@ -34,66 +34,66 @@
 					<div id="InnerPanel">
 						<ul>
 							<li>
-								<div id="NewsPanel" style="margin: 13px;">
-									<div id="NewsTitle">
+								<div class="NewsPanel" style="margin: 13px;">
+									<div class="NewsTitle">
 										Sovereign control restored
 									</div>
-									<div id="NewsPhoto">
-										<img src="../assets/SovLogo.png" style="height: 100%; width: 100%; position: absolute;"></img>
+									<div class="NewsPhoto">
+										<img src="../assets/SovLogo.png" style="height: 100%; width: 100%; position: absolute;"/>
 									</div>
-									<div id="NewsDescription">
+									<div class="NewsDescription">
 										Excellent work everyone, brestla is now under sovereign control again. For more information on how to assist, please contact Tomparks or Mat on discord.
 									</div>
 								</div>
 							</li>
 							<li>
-								<div id="NewsPanel" style="margin: 13px;">
-									<div id="NewsTitle">
+								<div class="NewsPanel" style="margin: 13px;">
+									<div class="NewsTitle">
 										Sovereign control restored
 									</div>
-									<div id="NewsPhoto">
-										<img src="../assets/SovLogo.png" style="height: 100%; width: 100%; position: absolute;"></img>
+									<div class="NewsPhoto">
+										<img src="../assets/SovLogo.png" style="height: 100%; width: 100%; position: absolute;"/>
 									</div>
-									<div id="NewsDescription">
+									<div class="NewsDescription">
 										Excellent work everyone, brestla is now under sovereign control again. For more information on how to assist, please contact Tomparks or Mat on discord.
 									</div>
 								</div>
 							</li>
 							<li>
-								<div id="NewsPanel" style="margin: 13px;">
-									<div id="NewsTitle">
+								<div class="NewsPanel" style="margin: 13px;">
+									<div class="NewsTitle">
 										Sovereign control restored
 									</div>
-									<div id="NewsPhoto">
-										<img src="../assets/SovLogo.png" style="height: 100%; width: 100%; position: absolute;"></img>
+									<div class="NewsPhoto">
+										<img src="../assets/SovLogo.png" style="height: 100%; width: 100%; position: absolute;"/>
 									</div>
-									<div id="NewsDescription">
+									<div class="NewsDescription">
 										Excellent work everyone, brestla is now under sovereign control again. For more information on how to assist, please contact Tomparks or Mat on discord.
 									</div>
 								</div>
 							</li>
 							<li>
-								<div id="NewsPanel" style="margin: 13px;">
-									<div id="NewsTitle">
+								<div class="NewsPanel" style="margin: 13px;">
+									<div class="NewsTitle">
 										Sovereign control restored
 									</div>
-									<div id="NewsPhoto">
-										<img src="../assets/SovLogo.png" style="height: 100%; width: 100%; position: absolute;"></img>
+									<div class="NewsPhoto">
+										<img src="../assets/SovLogo.png" style="height: 100%; width: 100%; position: absolute;"/>
 									</div>
-									<div id="NewsDescription">
+									<div class="NewsDescription">
 										Excellent work everyone, brestla is now under sovereign control again. For more information on how to assist, please contact Tomparks or Mat on discord.
 									</div>
 								</div>
 							</li>
 							<li>
-								<div id="NewsPanel" style="margin: 13px;">
-									<div id="NewsTitle">
+								<div class="NewsPanel" style="margin: 13px;">
+									<div class="NewsTitle">
 										Sovereign control restored
 									</div>
-									<div id="NewsPhoto">
-										<img src="../assets/SovLogo.png" style="height: 100%; width: 100%; position: absolute;"></img>
+									<div class="NewsPhoto">
+										<img src="../assets/SovLogo.png" style="height: 100%; width: 100%; position: absolute;"/>
 									</div>
-									<div id="NewsDescription">
+									<div class="NewsDescription">
 										Excellent work everyone, brestla is now under sovereign control again. For more information on how to assist, please contact Tomparks or Mat on discord.
 									</div>
 								</div>
@@ -104,17 +104,13 @@
 				<div id="Events">
 					<div id="Event">
 						<div id="EventImage">
-							<img src="https://pbs.twimg.com/profile_images/902285775382994948/sp3isoKI_400x400.jpg"/>
+							<script>document.write(Event_Image);</script>
 						</div>
 						<div id="EventTitle">
-							One Special Day
+							<script>document.write(Event_Title);</script>
 						</div>
 						<div id="EventDescription">
-							The UK games industry is generously committing time, sales and resources for gamers’ charity SpecialEffect on 29 September. <br/>
-							<br/>
-							For more information watch <a href="https://youtu.be/InN_394Hx6I" style="color: skyblue;">this video</a> or see <a href="http://www.onespecialday.org.uk/" style="color: skyblue;">this site.</a> <br/>
-							<br/>
-							if you're taking part in one special day as a caster or mod join the <a href="https://discord.gg/grTHYmS" style="color: skyblue;">discord</a>
+							<script>document.write(Event_Info);</script>
 						</div>
 					</div>
 				</div>
@@ -130,7 +126,7 @@
 				<img id="SovGlow" src="../assets/SovLogo-Glow.gif"/>
 				<div id="SovAlert">
 					<div id="InnerBorder">
-						<p id="AlertText">Sovereign wide alert! Brestla is under attack and requires our attention, contact Tomparkes or Mat for orders regarding defense initiatives!</p>
+						<p id="AlertText"><script>document.write(Alert_Description);</script></p>
 					</div>
 				</div>
 			</div>
@@ -138,7 +134,7 @@
 					<ul>
   						<li><a class="active" href="../pages/index.html">Home</a></li>
   						<li class="Communitydropdown">
-  							<a href="../pages/Forums.html">Community</a>
+  							<a href="#">Community</a>
   							<div class="Communitydropdown-content">
   								<a href="https://discord.gg/9aUPyFR">Discord</a>
   								<a onclick="copyToClipboard('TS')">TeamSpeak</a>
@@ -148,7 +144,7 @@
   						<li><a href="http://tomparkes1993.co.uk/EDHelpDesk/index.html">Help Desk</a></li>
   						<li><a href="../pages/Contact.html">Contact</a></li>
   						<li><a href="../pages/About.html">About</a></li>
-  						<li><a href="paypal.me/DracaDragon">Support</a></li>
+  						<li><a href="../pages/Support.html">Support</a></li>
 					</ul> 
 				</div>
 				<div id="RightNavigation">
@@ -162,8 +158,8 @@
 		
 		<div id="FooterButtons">
 			<ul>
-  				<li><image class="TeamSpeak" src="../assets/teamspeak.png" onclick="copyToClipboard('TS')"></image></li>
-				<li><image class="Discord" src="../assets/discord.png" onclick="location.replace('https://discord.gg/9aUPyFR')"></image></li>
+  				<li><image class="TeamSpeak" src="../assets/TeamSpeak.png" onclick="copyToClipboard('TS')"></image></li>
+				<li><image class="Discord" src="../assets/Discord.png" onclick="location.replace('https://discord.gg/9aUPyFR')"></image></li>
 			</ul> 
 		</div>
 		<p id="TS" class="w3-hide">50.205.53.70</p>
