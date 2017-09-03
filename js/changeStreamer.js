@@ -10,7 +10,7 @@ function setStreamer(stream)
 	document.getElementById('OtherStreams').style.top = '100%';
 	document.getElementById('follow').href = 'https://www.twitch.tv/' + stream;
 	document.getElementById('Donate').href = 'https://streamlabs.com/' + stream;
-	document.getElementById('Subscribe').href = 'https://secure.twitch.tv/products/' + stream + '/ticket/new';
+	document.getElementById('Subscribe').href = 'https://secure.twitch.tv/products/' + stream.toLowerCase() + '/ticket/new';
 	getStreamerInfo(stream);
 }
 
