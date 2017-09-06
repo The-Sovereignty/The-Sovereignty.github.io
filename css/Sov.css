@@ -242,7 +242,7 @@ span
     background-color: #7C7266;
     min-width: 10%;
 	width: 119px;
-	left: 25%;
+	left: 34.4%;
     box-shadow: 0% 4% 8% 0% rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -737,7 +737,7 @@ span
 }
 .paigination
 {
-	bottom: 5%;
+	top: 1%;
 	left: 33%;
 	position: absolute;
 }
@@ -881,63 +881,19 @@ span
 	border: 10px solid hsla(0,1%,19%,1.00);
 	position: absolute;
 }
-#History
-{	
-	height: 200px;
-	width: 100%;
-	top: 1%;
-	position: absolute;
-}
-#History span
+#AboutUsPanel h1
 {
 	color:hsla(55,83%,41%,1.00);
-	text-align: center;
-	font-size: 200%;
-	font-weight: bolder;
-	position: absolute;
+	width: 95%;
+	left: 2.5%;
+	position: relative;
 }
-#History p
+#AboutUsPanel h4
 {
 	color: #F39200;
-	top: 80%;
-	width: 100%;
-	text-align: center;
-	font-weight: bolder;
-	position: absolute;
-}
-#History img
-{
-	height: 100px;
-	width: 100px;
-	top: 30%;
-	left: 40%;
-	position: absolute;
-}
-
-#Lore
-{	
-	height: 200px;
-	width: 100%;
-	top: 14%;
-	position: absolute;
-}
-#Lore span
-{
-	color:hsla(55,83%,41%,1.00);
-	text-align: center;
-	font-size: 200%;
-	font-weight: bolder;
-	position: absolute;
-}
-#Lore p
-{
-	color: #F39200;
-	top: 20%;
-	width: 90%;
-	left: 5%;
-	text-align: center;
-	font-weight: bolder;
-	position: absolute;
+	width: 95%;
+	left: 2.5%;
+	position: relative;
 }
 #SupportSov
 {
