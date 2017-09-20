@@ -41,7 +41,7 @@
 	top: 80px;
 	left: -200px;
 	position: absolute;
-	border-radius: 50px;
+	border-radius: 30px;
 	background-color: #7A7366;
 	display: none;
 }
@@ -53,12 +53,13 @@
 	left: 10px;
 	margin: auto;
 	position: absolute;
-	border-radius: 50px;
+	border-radius: 30px;
 	background-color: #1E1211;
 }
 #AlertText
 {
 	color: white;
+	text-align: center;
 }
 
 .active
@@ -164,7 +165,6 @@ span
 	height:30px;
 	position:absolute;
 	right: 30px;
-	display: none;
 }
 #RightNavigation ul 
 {
@@ -216,8 +216,6 @@ span
 }
 .Communitydropdown-content {
     display: none;
-    position: absolute;
-	width: 108px;
     background-color: #7C7266;
     box-shadow: 0% 0% 0% 0% rgba(0,0,0,0.2);
     z-index: 1;
@@ -226,7 +224,9 @@ span
     padding: 4% 8%;
     text-decoration: none;
     display: block;
-    text-align: left;
+    text-align: center;
+	border-left: 1px solid #FFFFFF;
+	opacity: 0.5;
 }
 .Communitydropdown-content a:hover 
 {
@@ -238,11 +238,8 @@ span
 }
 .Streamersdropdown-content {
     display: none;
-    position: absolute;
     background-color: #7C7266;
     min-width: 10%;
-	width: 119px;
-	left: 34.4%;
     box-shadow: 0% 4% 8% 0% rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -251,7 +248,9 @@ span
     padding: 6% 8%;
     text-decoration: none;
     display: block;
-    text-align: left;
+    text-align: center;
+	border-left: 1px solid #FFFFFF;
+	opacity: 0.5;
 }
 .Streamersdropdown-content a:hover 
 {
@@ -268,7 +267,6 @@ span
 	height: 900px;
 	margin: auto;
 	position: absolute;
-	
 }
 #BusinessInquiries
 {
@@ -334,19 +332,14 @@ span
 	top: 150px;
 	position:absolute;
 }
-#HomeVidFrame
-{
-	height: 100%;
-	width: 100%;
-	position:absolute;
-    border-radius: 50px;
-}
 #Video
 {
 	height:97%;
 	width:97%;
 	top: 1.5%;
 	left: 1.5%;
+	border: 10px solid rgba(0, 0, 255, .2);
+	border-radius: 50px;
 	position:absolute;
 }
 #FillerImage
@@ -442,14 +435,14 @@ span
 #Event
 {
 	height: 750px;
-	width: 450px;
+	width: 490px;
 	left: 14px;
 	top: 15px;
 	position: absolute;
 }
 #EventImage
 {
-	left: 105px;
+	left: 125px;
 	position: absolute;
 }
 #EventTitle
@@ -475,13 +468,14 @@ span
 	height: 800px;
 	width: 500px;
 	right: 25px;
+	border: 10px solid #1C1010;
 	position: absolute;
 }
 
 .twitter-timeline
 {
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-top-right-radius: 41px;
+    border-bottom-right-radius: 41px;
 	height:100%;
 	width:100%;
 	position: absolute;
@@ -502,11 +496,12 @@ span
 }
 #FooterButtons
 {
-	height: 40px;
-	width: 150px;
+	height: 30px;
+	width: 100px;
 	opacity: 0.5;
-	bottom: 0;
+	bottom: -40px;
 	position: absolute;
+	background-color: aqua;
 }
 #FooterButtons ul 
 {
@@ -514,7 +509,6 @@ span
 	width: 100%;
     list-style-type: none;
 	padding: 0;
-	position: absolute;
 }
 #FooterButtons li
 {
@@ -525,11 +519,6 @@ span
 .TeamSpeak
 {
 	height: 30px;
-}
-.Youtube
-{
-	height: 30px;
-	width: 30px;
 }
 .Discord
 {
@@ -817,14 +806,14 @@ span
 }
 .UniqueIcon
 {
-	border-radius: 10%;
+	border-radius: 50%;
 }
 .Photo
 {
 	height: 90%;
 	width: 10%;
-	top: 5%;
-	left: 0.6%;
+	top: 4.5%;
+	left: 1%;
 	position: absolute;
 }
 .LiveStatus
