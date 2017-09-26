@@ -30,6 +30,7 @@
 #SovGlow:hover + #SovAlert
 {
 	opacity: 1;
+	visibility: visible;
 	display:block;
 }
 #SovAlert:hover
@@ -45,6 +46,7 @@
 	position: absolute;
 	border-radius: 30px;
 	background-color: #7A7366;
+	visibility: hidden;
 	opacity: 0;
 	transition: opacity 1s;
 }
@@ -91,16 +93,6 @@
 	background-color: #837B6E;
     border-bottom: 20px solid #1C1010;
 }
-#BottomBanner
-{
-	width: 100%;
-	height: 60px;
-	opacity: 0.9;
-	position: absolute;
-	background-color: #837B6E;
-    border-top: 20px solid #1C1010;
-}
-
 span
 {
 	height: 100%;
@@ -129,8 +121,7 @@ span
 #LeftNavigation
 {
 	top: 4px;
-	width: 45%;
-	height: 40px;
+	width: 543px;
 	position:absolute;
 }
 #LeftNavigation ul 
@@ -209,26 +200,16 @@ span
 .Communitydropdown:hover .Communitydropdown-content
 {
 	opacity: 1;
-}
-.Communitydropdown:hover
-{
-	opacity: 1;
-}
-.Communitydropdown 
-{
-    display: inline-block;
-}
-.Communitydropdown-content:hover
-{
-	opacity: 1;
+	height: 130px;
+	visibility: visible;
 }
 .Communitydropdown-content 
 {
-    display: block;
     box-shadow: 0% 0% 0% 0% rgba(0,0,0,0.2);
-	height: 150px;
+	height: 0;
 	opacity: 0;
 	transition: opacity 1s;
+	transition: height 1s;
 }
 .Communitydropdown-content a:hover 
 {
@@ -238,7 +219,6 @@ span
 {
     padding: 4% 8%;
     text-decoration: none;
-    display: block;
     text-align: center;
 	border-left: 1px solid #FFFFFF;
 	cursor: pointer;
@@ -246,7 +226,6 @@ span
 }
 .Communitydropdown:hover .Communitydropdown-content 
 {
-    display: block;
 	transition: opacity 1s;
 }
 
@@ -294,24 +273,28 @@ span
 }
 
 
-
+.Streamersdropdown:hover .Streamersdropdown-content
+{
+	opacity: 1;
+	height: 98px;
+	visibility: visible;
+}
 .Streamersdropdown-content 
 {
-    display: none;
-    background-color: #7C7266;
-    min-width: 10%;
-    box-shadow: 0% 4% 8% 0% rgba(0,0,0,0.2);
-    z-index: 1;
+    box-shadow: 0% 0% 0% 0% rgba(0,0,0,0.2);
+	height: 0;
+	opacity: 0;
+	transition: opacity 1s;
+	transition: height 0s;
 }
 .Streamersdropdown-content a 
 {
-    color: white;
-    padding: 6% 8%;
+    padding: 4% 8%;
     text-decoration: none;
-    display: block;
     text-align: center;
 	border-left: 1px solid #FFFFFF;
-	opacity: 0.5;
+	cursor: pointer;
+    background-color: #7C7266;
 }
 .Streamersdropdown-content a:hover 
 {
@@ -319,7 +302,7 @@ span
 }
 .Streamersdropdown:hover .Streamersdropdown-content 
 {
-    display: block;
+	transition: opacity 1s;
 }
 
 #MainBody
