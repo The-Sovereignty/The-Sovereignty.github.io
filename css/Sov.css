@@ -121,7 +121,7 @@ span
 #LeftNavigation
 {
 	top: 4px;
-	width: 543px;
+	width: 600px;
 	position:absolute;
 }
 #LeftNavigation ul 
@@ -182,6 +182,7 @@ span
 	color: white;
 	text-align: center;
 	padding: 5px 10px;
+	text-decoration: none;
 	border-left: 1px solid #FFFFFF;
 	opacity: 0.5;
 	transition: opacity 1s;
@@ -583,10 +584,10 @@ span
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
 	background-color: #1F1F1F;
-	height: 100%;
+	height: 40px;
 	width: 100%;
+	transition: height 1s;
 	position: absolute;
-	display: none;
 }
 #Streamer
 {
@@ -596,6 +597,7 @@ span
 	height: 87%;
 	width: 70%;
 	position: absolute;
+	display: none;
 	background-color: #171717;
 }
 #Chat
@@ -606,6 +608,7 @@ span
 	height: 97.3%;
 	width: 28.5%;
 	position: absolute;
+	display: none;
 	background-color: #171717;
 }
 #StreamInfo
@@ -616,6 +619,7 @@ span
 	position: absolute;
 	height: 9%;
 	width: 50%;
+	display: none;
 	background-color: #171717;
 }
 #streamsource
@@ -634,6 +638,7 @@ span
 	height: 9%;
 	width: 19.5%;
 	right: 29.5%;
+	display: none;
 	background-color: #171717;
 }
 #FollowStream
@@ -642,17 +647,15 @@ span
 	width: 33%;
 	position: absolute;
 	background-color: rebeccapurple;
-    background-image: linear-gradient(to bottom, black 94%,white 0%), url('w3css.gif');
-  	background-blend-mode: color-dodge;
-	box-shadow: inset 0px 0px 5px #000;
 	border-bottom-left-radius: 10px;
 	border-top-left-radius: 10px;
+	box-shadow: inset 0px 0px 5px #000;
 }
 #follow
 {
 	position: absolute;
-	left: 30%;
-	top: 30%;
+	height: 100%;
+	width: 100%;
 	color: white;
 	font: bold;
 	font-weight:bolder;
@@ -660,24 +663,28 @@ span
 }
 #DonateStream
 {
-	left: 33%;
+	left: 33.5%;
 	height: 100%;
-	width: 34%;
+	width: 33%;
 	position: absolute;
 	background-color: rebeccapurple;
-    background-image: linear-gradient(to bottom, black 94%,white 0%), url('w3css.gif');
-  	background-blend-mode: color-dodge;
 	box-shadow: inset 0px 0px 5px #000;
 }
 #Donate
 {
 	position: absolute;
-	left: 25%;
-	top: 30%;
+	height: 100%;
+	width: 100%;
 	color: white;
 	font: bold;
 	font-weight:bolder;
 	font-family:Arial,sans-serif;
+}
+.textAlign
+{
+	position: absolute;
+	top: 25px;
+	text-align: center;
 }
 #SubStream
 {
@@ -686,8 +693,6 @@ span
 	width: 33%;
 	position: absolute;
 	background-color: rebeccapurple;
-    background-image: linear-gradient(to bottom, black 94%,white 0%), url('w3css.gif');
-  	background-blend-mode: color-dodge;
 	box-shadow: inset 0px 0px 5px #000;
 	border-bottom-right-radius: 10px;
 	border-top-right-radius: 10px;
@@ -695,8 +700,8 @@ span
 #Subscribe
 {
 	position: absolute;
-	left: 15%;
-	top: 30%;
+	height: 100%;
+	width: 100%;
 	color: white;
 	font: bold;
 	font-weight:bolder;
@@ -738,7 +743,8 @@ span
 	height: 200%;
 	width: 100%;
 	margin: auto;
-	top: 0;
+	top: 40px;
+	transition: top 1s;
 }
 #MalicPhoto
 {
@@ -773,6 +779,11 @@ span
 	top: 1%;
 	left: 33%;
 	position: absolute;
+}
+.paigination a
+{
+	background-color:hsla(0,0%,38%,1.00);
+	transition: background-color 1s;
 }
 #column1
 {
@@ -983,8 +994,23 @@ span
 	position: absolute;
 }
 
+.influenceBar
+{
+	width: 0;
+	transition: width 1s;
+}
 
-
+.influencePanel
+{
+	position: absolute;
+	height: 500px;
+	width: 98%;
+	left: 1%;
+	top: 8%; 
+	border-radius: 50px;
+	border: 10px solid hsla(0,1%,19%,1.00);
+	background-color: #1D1D1B;
+}
 
 
 

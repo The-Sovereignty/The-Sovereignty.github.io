@@ -7,10 +7,18 @@ function setStreamer(stream)
 	document.getElementById('StreamersName').innerHTML = stream;
 	document.getElementById('StreamersName').href = 'https://www.twitch.tv/' + stream;
 	document.getElementById('StreamFeed').style.display = 'block';
-	document.getElementById('OtherStreams').style.top = '100%';
+	document.getElementById('StreamFeed').style.height = '800px';
+	document.getElementById('OtherStreams').style.top = '800px';
+	
 	document.getElementById('follow').href = 'https://www.twitch.tv/' + stream;
 	document.getElementById('Donate').href = 'https://streamlabs.com/' + stream;
 	document.getElementById('Subscribe').href = 'https://secure.twitch.tv/products/' + stream.toLowerCase() + '/ticket/new';
+	
+	document.getElementById('Streamer').style.display = 'block';
+	document.getElementById('Chat').style.display = 'block';
+	document.getElementById('StreamInfo').style.display = 'block';
+	document.getElementById('TwitchFollow').style.display = 'block';
+	
 	getStreamerInfo(stream);
 }
 
