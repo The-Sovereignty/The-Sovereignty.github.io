@@ -1,0 +1,48 @@
+#SupportSov
+{
+	height: 700px;
+	width: 48%;
+	top: 20%;
+	left: 1%;
+	background-color:#1D1D1B; 
+	border-radius: 50px;
+	border: 10px solid hsla(0,1%,19%,1.00);
+	position: absolute;
+}
+#SovIcon
+{
+	height: 350px;
+	width: 400px;
+	left: 18%;
+	cursor: pointer;
+	position: absolute;
+}
+#SupportDraca
+{
+	height: 700px;
+	width: 48%;
+	top: 20%;
+	right: 1%;
+	background-color:#1D1D1B; 
+	border-radius: 50px;
+	border: 10px solid hsla(0,1%,19%,1.00);
+	position: absolute;
+}
+#DracaProfileImage
+{
+	height: 400px;
+	width: 400px;
+	left: 23%;
+	cursor: pointer;
+	position: absolute;
+}
+.SupportMessage
+{
+	width: 80%;
+	top: 70%;
+	left: 10%;
+	color: #F39200;
+	text-align: center;
+	font-weight: bolder;
+	position: absolute;
+}

@@ -1,0 +1,67 @@
+#BusinessInquiries
+{
+	height: 500px;
+	width: 63%;
+	top: 10%;
+	left: -13%;
+	opacity: 0.2;
+	position: absolute;
+	background-color: white;
+	transform: skewX(-30deg);
+	border: 15px solid #1B1B1B;
+	transition: 1s;
+}
+#BusinessInquiries:hover
+{
+	opacity: 0.8;
+}
+.sovLogo
+{
+	transform: skewX(30deg);
+}
+.Logo
+{
+	height: 400px;
+	position: absolute;
+}
+#SovBusDescription
+{
+	width: 80%;
+	height: 100%;
+	right: 10px;
+	top: 80%;
+	text-align:right;
+	position: absolute;
+	color: hsla(55,83%,41%,1.00);
+	font-weight: bolder;
+	font-size: 110%;
+}
+#WebInquiries
+{
+	height: 500px;
+	width: 63%;
+	top: 10%;
+	right: -13%;
+	opacity: 0.2;
+	position: absolute;
+	background-color: white;
+	transform: skewX(-30deg);
+	border: 15px solid #1B1B1B;
+	transition: 1s;
+}
+#WebInquiries:hover
+{
+	opacity: 0.8;
+}
+#WebBusDescription
+{
+	width: 80%;
+	height: 100%;
+	top: 80%;
+	left: 10px;
+	text-align: left;
+	position: absolute;
+	color: hsla(55,83%,41%,1.00);
+	font-weight: bolder;
+	font-size: 110%;
+}

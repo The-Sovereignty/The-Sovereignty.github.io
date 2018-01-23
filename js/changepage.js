@@ -2,12 +2,22 @@
 
 function showPage(id)
 {
-	var totalNumberOfPages = 5;
-	for( i = 1; i <= totalNumberOfPages; i++)
+	var totalNumberOfPages = 6;
+	for(var i = 1; i <= totalNumberOfPages; i++)
 	{
 		if(document.getElementById('page'+i))
-			document.getElementById('page'+i).style.display = 'none';
+		{
+			document.getElementById('page'+i).className -= " active";
+			document.getElementById('page'+i).style.visibility = 'hidden';
+			
+		}
+		
+		
+		if(document.getElementById('page'+id))
+		{
+			document.getElementById('page'+id).style.visibility = 'visible';
+		}
 	}
-	if(document.getElementById('page'+id))
-		document.getElementById('page'+id).style.display = 'block';
+	
+    document.getElementById('page'+id).className += " active";
 }

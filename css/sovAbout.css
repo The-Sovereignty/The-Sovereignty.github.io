@@ -1,0 +1,25 @@
+#AboutUsPanel
+{
+	height: 1670px;
+	width: 95%;
+	left: 2.5%;
+	top: 10%;
+	background-color:#1D1D1B; 
+	border-radius: 50px;
+	border: 10px solid hsla(0,1%,19%,1.00);
+	position: absolute;
+}
+#AboutUsPanel h1
+{
+	color:hsla(55,83%,41%,1.00);
+	width: 95%;
+	left: 2.5%;
+	position: relative;
+}
+#AboutUsPanel h4
+{
+	color: #F39200;
+	width: 95%;
+	left: 2.5%;
+	position: relative;
+}

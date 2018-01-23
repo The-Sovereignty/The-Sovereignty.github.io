@@ -3,29 +3,32 @@
 		
 	<head>
 		<link rel="stylesheet" type="text/css" href="../css/Sov.css">
+		<link rel="stylesheet" type="text/css" href="../css/sovStreamers.css">
 		<link rel="stylesheet" type="text/css" href="../css/w3.css">
 		<link rel="icon" href="../assets/SovLogo.png" type="image/gif" sizes="596x596">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<meta charset="UTF-8">
-		
-		<title>The Sovereignty</title>
-
+		<meta name="description" content="The Sovereignty, a group led by their prestigious leader Mavia Kain, was founded in June 3301 by a gathering of like minded individuals at Dalgarno Station, Kamchadals.">
+		<meta name="keywords" content="The Sovereignty, Streamers, Stream Team">
+		<meta name="author" content="Jasmine Moniz">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>The Sovereignty: Streamers</title>
 	</head>
-	<script src="../js/copytext.js"></script>
+	
 	<script src="../js/changepage.js"></script>
 	<script src="../js/changeStreamer.js"></script>
-	<script src="../js/changeBackground.js"></script>
 	<script src="../js/malic.js"></script>
 	<script src="../js/SovData.js"></script>
 	
-	<img id="background" src="https://pbs.twimg.com/profile_images/751168765191081988/3y6h5fRA_400x400.jpg"/>
+	<img id="background" src="https://pbs.twimg.com/profile_images/751168765191081988/3y6h5fRA_400x400.jpg" alt=""/>
 	
 	<body>
-		<div id="TopBanner"></div>
+		
 		<div id="SovPage" style="height: 2270px;">
 			<div class="Streams">
 				<div id="StreamFeed">
 					<div id="Streamer">
-						<iframe id="streamsource" src="https://player.twitch.tv/?channel=djtruthsayer" frameborder="0" scrolling="no" height="100%" width="100%"></iframe>
+						<iframe id="streamsource" src="#" frameborder="0" scrolling="no" height="100%" width="100%"></iframe>
 					</div>
 					<div id="StreamInfo">
 						<span class="stream-meta"><a href="https://www.twitch.tv/djtruthsayer" id="StreamersName">DJTruthsayer</a>
@@ -41,29 +44,100 @@
 						<iframe id="chatsource" src="https://www.twitch.tv/djtruthsayer/chat?popout=" frameborder="0" scrolling="no" height="100%" width="100%"></iframe>
 					</div>
 				</div>
-				<div id="OtherStreams">
-					<div id="page1">
-						<div class="LIFrame" style="left: 18%; top: 20%;" onClick="setStreamer('DJTruthsayer')">
+				<div id="OtherStreams" style="overflow-y: scroll;">
+					<div id="page1" class="page active">
+					<div class="Column" style="width: 32%; height: 1100px; left: 2%; top: 4%; position: absolute;">
+						<ul style="list-style-type: none;">
+							<script>
+									for(x=0; x < Math.ceil(SovStreamTeam.length/3); x++)
+									{
+										document.write(
+											"<li>" + 
+												"<div class='Streamer' onClick='setStreamer(&quot;" + SovStreamTeam[x] + "&quot;)'>" +
+													"<div class='Photo'>" +
+														"<img class='UniqueIcon' alt='../assets/SovLogo.png' src='../assets/profilepictures/" + SovStreamTeam[x] + ".png' height='100%' width='100%' onerror='this.onerror=null;this.src=this.alt;'/>" +
+													"</div>" +
+													"<div class='LiveStatus'>" +
+														"<img class='LiveButton' data-twitch-channel='" + SovStreamTeam[x] + "' data-online-image='../assets/Live_Icon.png' data-offline-image='../assets/Offline_Icon.png'/>" +
+													"</div>" +
+													"<div class='StreamerInfo'>" +
+														"<span class='StreamerName'  style='color:hsla(275,100%,77%,1.00);'>" + SovStreamTeam[x] + "</span>" +
+													"</div>" +
+												"</div>" +
+											"</li>");
+									}
+								
+							</script>
+						</ul>
+					</div>
+					<div class="Column" style="width: 32%; height: 1100px; left: 34.5%; top: 4%; position: absolute;">
+						<ul style="list-style-type: none;">
+							<script>
+									for(x= Math.ceil(SovStreamTeam.length/3); x < Math.ceil(SovStreamTeam.length/3*2); x++)
+									{
+										document.write(
+											"<li>" + 
+												"<div class='Streamer' onClick='setStreamer(&quot;" + SovStreamTeam[x] + "&quot;)'>" +
+													"<div class='Photo'>" +
+														"<img class='UniqueIcon' alt='../assets/SovLogo.png' src='../assets/profilepictures/" + SovStreamTeam[x] + ".png' height='100%' width='100%' onerror='this.onerror=null;this.src=this.alt;'/>" +
+													"</div>" +
+													"<div class='LiveStatus'>" +
+														"<img class='LiveButton' data-twitch-channel='" + SovStreamTeam[x] + "' data-online-image='../assets/Live_Icon.png' data-offline-image='../assets/Offline_Icon.png'/>" +
+													"</div>" +
+													"<div class='StreamerInfo'>" +
+														"<span class='StreamerName'  style='color:hsla(275,100%,77%,1.00);'>" + SovStreamTeam[x] + "</span>" +
+													"</div>" +
+												"</div>" +
+											"</li>");
+									}
+							</script>
+						</ul>
+					</div>
+					<div class="Column" style="width: 32%; height: 1100px; right: 1%; top: 4%; position: absolute;">
+						<ul style="list-style-type: none;">
+							<script>
+									for(x= Math.ceil(SovStreamTeam.length/3*2); x < Math.ceil(SovStreamTeam.length); x++)
+									{
+										document.write(
+											"<li>" + 
+												"<div class='Streamer' onClick='setStreamer(&quot;" + SovStreamTeam[x] + "&quot;)'>" +
+													"<div class='Photo'>" +
+														"<img class='UniqueIcon' alt='../assets/SovLogo.png' src='../assets/profilepictures/" + SovStreamTeam[x] + ".png' height='100%' width='100%' onerror='this.onerror=null;this.src=this.alt;'/>" +
+													"</div>" +
+													"<div class='LiveStatus'>" +
+														"<img class='LiveButton' data-twitch-channel='" + SovStreamTeam[x] + "' data-online-image='../assets/Live_Icon.png' data-offline-image='../assets/Offline_Icon.png'/>" +
+													"</div>" +
+													"<div class='StreamerInfo'>" +
+														"<span class='StreamerName'  style='color:hsla(275,100%,77%,1.00);'>" + SovStreamTeam[x] + "</span>" +
+													"</div>" +
+												"</div>" +
+											"</li>");
+									}
+							</script>
+						</ul>
+					</div>
+				</div>
+					<div id="page2" class="page">
+						<div class="LIFrame" style="left: 18%; top: 20%;" onClick="setStreamer('DJTruthsayer'); playSquee();">
 							<div class="LIStreamer">
 								<div class="LIPhoto">
 									<img class="UniqueIcon" alt="../assets/SovLogo.png" src="../assets/profilepictures/DJTruthsayer.png" height="100%" width="100%" onerror="this.onerror=null;this.src=this.alt;"/>
 								</div>
 								<div class="LILiveStatus">
-									<img class="LiveButton" data-twitch-channel="DJTruthsayer"/>
+									<img class="LiveButton" data-twitch-channel="DJTruthsayer" alt=""/>
 								</div>
 								<div class="LIStreamerInfo">
 									<span class="w3-text-purple">DJTruthsayer</span>
 								</div>
 							</div>
-						</div>
-					
-						<div class="LIFrame" style="left: 40%; top: 20%;" onClick="setStreamer('Malic_VR')">
+						</div>				
+						<div class="LIFrame" style="left: 40%; top: 20%;" onClick="setStreamer('Malic_VR'); playSquee();">
 							<div class="LIStreamer">
 								<div class="LIPhoto">
-									<img id="MalicPhoto" height="100%" width="100%"/>
+									<img id="MalicPhoto" height="100%" width="100%" alt=""/>
 								</div>
 								<div class="LILiveStatus">
-									<img class="LiveButton" data-twitch-channel="Malic_VR"/>
+									<img class="LiveButton" data-twitch-channel="Malic_VR" alt=""/>
 								</div>
 								<div class="LIStreamerInfo">
 									<span class="w3-text-purple">Malic_VR</span>
@@ -76,415 +150,350 @@
 									<img class="UniqueIcon" alt="../assets/SovLogo.png" src="../assets/profilepictures/Khaleb_Daarke.png" height="100%" width="100%" onerror="this.onerror=null;this.src=this.alt;"/>
 								</div>
 								<div class="LILiveStatus">
-									<img class="LiveButton" data-twitch-channel="Khaleb_Daarke"/>
+									<img class="LiveButton" data-twitch-channel="Khaleb_Daarke" alt=""/>
 								</div>
 								<div class="LIStreamerInfo">
 									<span class="w3-text-purple">Khaleb_Daarke</span>
 								</div>
 							</div>
 						</div>
-						<div class="LIFrame" style="left: 30%; top: 48%;" onClick="setStreamer('MARViNDarkStone')">
+						<div class="LIFrame" style="left: 18%; top: 48%;" onClick="setStreamer('MARViNDarkStone')">
 							<div class="LIStreamer">
 								<div class="LIPhoto">
 									<img class="UniqueIcon" alt="../assets/SovLogo.png" src="../assets/profilepictures/MarvinDarkstone.png" height="100%" width="100%" onerror="this.onerror=null;this.src=this.alt;"/>
 								</div>
 								<div class="LILiveStatus">
-									<img class="LiveButton" data-twitch-channel="MARViNDarkStone"/>
+									<img class="LiveButton" data-twitch-channel="MARViNDarkStone" alt=""/>
 								</div>
 								<div class="LIStreamerInfo">
 									<span class="w3-text-purple">MARViNDarkStone</span>
 								</div>
 							</div>
 						</div>
-						<div class="LIFrame" style="left: 52%; top: 48%;" onClick="setStreamer('CMDRHughMann')">
+						<div class="LIFrame" style="left: 40%; top: 48%;" onClick="setStreamer('TheCommander')">
 							<div class="LIStreamer">
 								<div class="LIPhoto">
-									<img class="UniqueIcon" alt="../assets/SovLogo.png" src="../assets/profilepictures/CMDRHughMann.png" height="100%" width="100%" onerror="this.onerror=null;this.src=this.alt;"/>
+									<img class="UniqueIcon" alt="../assets/SovLogo.png" src="../assets/profilepictures/TheCommander.png" height="100%" width="100%" onerror="this.onerror=null;this.src=this.alt;"/>
 								</div>
 								<div class="LILiveStatus">
-									<img class="LiveButton" data-twitch-channel="CMDRHughMann"/>
+									<img class="LiveButton" data-twitch-channel="TheCommander" alt=""/>
 								</div>
 								<div class="LIStreamerInfo">
-									<span class="w3-text-purple">CMDRHughMann</span>
+									<span class="w3-text-purple">TheCommander</span>
+								</div>
+							</div>
+						</div>
+						<div class="LIFrame" style="left: 62%; top: 48%;" onClick="setStreamer('ChaosDispenser')">
+							<div class="LIStreamer">
+								<div class="LIPhoto">
+									<img class="UniqueIcon" alt="../assets/SovLogo.png" src="../assets/profilepictures/ChaosDispenser.png" height="100%" width="100%" onerror="this.onerror=null;this.src=this.alt;"/>
+								</div>
+								<div class="LILiveStatus">
+									<img class="LiveButton" data-twitch-channel="ChaosDispenser" alt=""/>
+								</div>
+								<div class="LIStreamerInfo">
+									<span class="w3-text-purple">ChaosDispenser</span>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div id="page2">
-						<div class="Column" style="width: 500px; height: 1100px; left: 200px; top: 100px; position: absolute;">
+					<div id="page3" class="page">
+						<div class="Column" style="width: 40%; height: 1100px; left: 11%; top: 4%; position: absolute;">
 							<ul style="list-style-type: none;">
-								<li>
-									<div class="Streamer" onClick="setStreamer('The_Thargoid')">
-										<div class="Photo">
-											<img class="UniqueIcon" alt="../assets/SovLogo.png" src="../assets/profilepictures/The_Thargoid.png" height="100%" width="100%" onerror="this.onerror=null;this.src=this.alt;"/>
-										</div>
-										<div class="LiveStatus">
-											<img class="LiveButton" data-twitch-channel="The_Thargoid" data-online-image="../assets/Live_Icon.png" data-offline-image="../assets/Offline_Icon.png" >
-										</div>
-										<div class="StreamerInfo">
-											<span class="StreamerName" style="color:hsla(5,93%,54%,1.00);">The_Thargoid</span>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="Streamer" onClick="setStreamer('carrumba0095')">
-										<div class="Photo">
-											<img class="UniqueIcon" alt="../assets/SovLogo.png" src="../assets/profilepictures/carrumba0095.png" height="100%" width="100%" onerror="this.onerror=null;this.src=this.alt;"/>
-										</div>
-										<div class="LiveStatus">
-											<img class="LiveButton" data-twitch-channel="carrumba0095" data-online-image="../assets/Live_Icon.png" data-offline-image="../assets/Offline_Icon.png" >
-										</div>
-										<div class="StreamerInfo">
-											<span class="StreamerName"  style="color:hsla(5,93%,54%,1.00);">carrumba0095</span>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="Streamer" onClick="setStreamer('CrazyCazenn')">
-										<div class="Photo">
-											<img class="UniqueIcon" alt="../assets/SovLogo.png" src="../assets/profilepictures/CrazyCazenn.png" height="100%" width="100%" onerror="this.onerror=null;this.src=this.alt;"/>
-										</div>
-										<div class="LiveStatus">
-											<img class="LiveButton" data-twitch-channel="CrazyCazenn" data-online-image="../assets/Live_Icon.png" data-offline-image="../assets/Offline_Icon.png" >
-										</div>
-										<div class="StreamerInfo">
-											<span class="StreamerName"  style="color:hsla(5,93%,54%,1.00);">CrazyCazenn</span>
-										</div>
-									</div>
-								</li>
+								<script>
+									for(x=0; x < Math.ceil(Rank_5_Streamers.length/2); x++)
+									{
+										document.write(
+											"<li>" + 
+												"<div class='Streamer' onClick='setStreamer(&quot;" + Rank_5_Streamers[x] + "&quot;)'>" +
+													"<div class='Photo'>" +
+														"<img class='UniqueIcon' alt='../assets/SovLogo.png' src='../assets/profilepictures/" + Rank_5_Streamers[x] + ".png' height='100%' width='100%' onerror='this.onerror=null;this.src=this.alt;'/>" +
+													"</div>" +
+													"<div class='LiveStatus'>" +
+														"<img class='LiveButton' data-twitch-channel='" + Rank_5_Streamers[x] + "' data-online-image='../assets/Live_Icon.png' data-offline-image='../assets/Offline_Icon.png'/>" +
+													"</div>" +
+													"<div class='StreamerInfo'>" +
+														"<span class='StreamerName'  style='color:hsla(5,93%,54%,1.00);'>" + Rank_5_Streamers[x] + "</span>" +
+													"</div>" +
+												"</div>" +
+											"</li>");
+									}
+								</script>
 							</ul>
 						</div>
-						<div class="Column" style="width: 500px; height: 1100px; left: 800px; top: 100px; position: absolute;">
+						<div class="Column" style="width: 40%; height: 1100px; right: 8%; top: 4%; position: absolute;">
 							<ul style="list-style-type: none;">
-								<li>
-									<div class="Streamer" onClick="setStreamer('Ecrodorious')">
-										<div class="Photo">
-											<img class="UniqueIcon" alt="../assets/SovLogo.png" src="../assets/profilepictures/Ecrodorious.png" height="100%" width="100%" onerror="this.onerror=null;this.src=this.alt;"/>
-										</div>
-										<div class="LiveStatus">
-											<img class="LiveButton" data-twitch-channel="Ecrodorious" data-online-image="../assets/Live_Icon.png" data-offline-image="../assets/Offline_Icon.png" >
-										</div>
-										<div class="StreamerInfo">
-											<span class="StreamerName"  style="color:hsla(5,93%,54%,1.00);">Ecrodorious</span>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="Streamer" onClick="setStreamer('Valkyrien27')">
-										<div class="Photo">
-											<img class="UniqueIcon" alt="../assets/SovLogo.png" src="../assets/profilepictures/Valkyrien27.png" height="100%" width="100%" onerror="this.onerror=null;this.src=this.alt;"/>
-										</div>
-										<div class="LiveStatus">
-											<img class="LiveButton" data-twitch-channel="Malic_VR" data-online-image="../assets/Live_Icon.png" data-offline-image="../assets/Offline_Icon.png" >
-										</div>
-										<div class="StreamerInfo">
-											<span class="StreamerName" style="color:hsla(5,93%,54%,1.00);">Valkyrien27</span>
-										</div>
-									</div>
-								</li>
+								<script>
+									for(x=Math.ceil(Rank_5_Streamers.length/2); x < Rank_5_Streamers.length; x++)
+									{
+										document.write(
+											"<li>" + 
+												"<div class='Streamer' onClick='setStreamer(&quot;" + Rank_5_Streamers[x] + "&quot;)'>" +
+													"<div class='Photo'>" +
+														"<img class='UniqueIcon' alt='../assets/SovLogo.png' src='../assets/profilepictures/" + Rank_5_Streamers[x] + ".png' height='100%' width='100%' onerror='this.onerror=null;this.src=this.alt;'/>" +
+													"</div>" +
+													"<div class='LiveStatus'>" +
+														"<img class='LiveButton' data-twitch-channel='" + Rank_5_Streamers[x] + "' data-online-image='../assets/Live_Icon.png' data-offline-image='../assets/Offline_Icon.png'/>" +
+													"</div>" +
+													"<div class='StreamerInfo'>" +
+														"<span class='StreamerName'  style='color:hsla(5,93%,54%,1.00);'>" + Rank_5_Streamers[x] + "</span>" +
+													"</div>" +
+												"</div>" +
+											"</li>");
+									}
+								</script>
 							</ul>
 						</div>
 					</div>
-					<div id="page3">
-					<div class="Column" style="width: 450px; height: 1100px; left: 50px; top: 50px; position: absolute;">
+					<div id="page4" class="page">
+					<div class="Column" style="width: 32%; height: 1100px; left: 1%; top: 4%; position: absolute;">
 						<ul style="list-style-type: none;">
-							<li>
-								<div class="Streamer" onClick="setStreamer('icehornet_')">
-									<div class="Photo">
-										<img class="UniqueIcon" alt="../assets/SovLogo.png" src="../assets/profilepictures/icehornet_.png" height="100%" width="100%" onerror="this.onerror=null;this.src=this.alt;"/>
-									</div>
-									<div class="LiveStatus">
-										<img class="LiveButton" data-twitch-channel="icehornet_" data-online-image="../assets/Live_Icon.png" data-offline-image="../assets/Offline_Icon.png" >
-									</div>
-									<div class="StreamerInfo">
-										<span class="StreamerName" style="color:hsla(35,80%,60%,1.00);">icehornet_</span>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="Streamer" onClick="setStreamer('DLCoates1')">
-									<div class="Photo">
-										<img class="UniqueIcon" alt="../assets/SovLogo.png" src="../assets/profilepictures/DLCoates1.png" height="100%" width="100%" onerror="this.onerror=null;this.src=this.alt;"/>
-									</div>
-									<div class="LiveStatus">
-										<img class="LiveButton" data-twitch-channel="DLCoates1" data-online-image="../assets/Live_Icon.png" data-offline-image="../assets/Offline_Icon.png" >
-									</div>
-									<div class="StreamerInfo">
-										<span class="StreamerName" style="color:hsla(35,80%,60%,1.00);">DLCoates1</span>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="Streamer" onClick="setStreamer('PaleGringo')">
-									<div class="Photo">
-										<img class="UniqueIcon" alt="../assets/SovLogo.png" src="../assets/profilepictures/PaleGringo.png" height="100%" width="100%" onerror="this.onerror=null;this.src=this.alt;"/>
-									</div>
-									<div class="LiveStatus">
-										<img class="LiveButton" data-twitch-channel="PaleGringo" data-online-image="../assets/Live_Icon.png" data-offline-image="../assets/Offline_Icon.png" >
-									</div>
-									<div class="StreamerInfo">
-										<span class="StreamerName" style="color:hsla(35,80%,60%,1.00);">PaleGringo</span>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="Streamer" onClick="setStreamer('Rormir')">
-									<div class="Photo">
-										<img class="UniqueIcon" alt="../assets/SovLogo.png" src="../assets/profilepictures/Rormir.png" height="100%" width="100%" onerror="this.onerror=null;this.src=this.alt;"/>
-									</div>
-									<div class="LiveStatus">
-										<img class="LiveButton" data-twitch-channel="Rormir" data-online-image="../assets/Live_Icon.png" data-offline-image="../assets/Offline_Icon.png" >
-									</div>
-									<div class="StreamerInfo">
-										<span class="StreamerName" style="color:hsla(35,80%,60%,1.00);">Rormir</span>
-									</div>
-								</div>
-							</li>
+							<script>
+									for(x=0; x < Math.ceil(Rank_4_Streamers.length/3); x++)
+									{
+										document.write(
+											"<li>" + 
+												"<div class='Streamer' onClick='setStreamer(&quot;" + Rank_4_Streamers[x] + "&quot;)'>" +
+													"<div class='Photo'>" +
+														"<img class='UniqueIcon' alt='../assets/SovLogo.png' src='../assets/profilepictures/" + Rank_4_Streamers[x] + ".png' height='100%' width='100%' onerror='this.onerror=null;this.src=this.alt;'/>" +
+													"</div>" +
+													"<div class='LiveStatus'>" +
+														"<img class='LiveButton' data-twitch-channel='" + Rank_4_Streamers[x] + "' data-online-image='../assets/Live_Icon.png' data-offline-image='../assets/Offline_Icon.png'/>" +
+													"</div>" +
+													"<div class='StreamerInfo'>" +
+														"<span class='StreamerName'  style='color:hsla(35,80%,60%,1.00);'>" + Rank_4_Streamers[x] + "</span>" +
+													"</div>" +
+												"</div>" +
+											"</li>");
+									}
+							</script>
 						</ul>
 					</div>
-					<div class="Column" style="width: 450px; height: 1100px; left: 530px; top: 50px; position: absolute;">
+					<div class="Column" style="width: 32%; height: 1100px; left: 34.5%; top: 4%; position: absolute;">
 						<ul style="list-style-type: none;">
-							<li>
-								<div class="Streamer" onClick="setStreamer('ChaosDispenser')">
-									<div class="Photo">
-										<img class="UniqueIcon" alt="../assets/SovLogo.png" src="../assets/profilepictures/ChaosDispenser.png" height="100%" width="100%" onerror="this.onerror=null;this.src=this.alt;"/>
-									</div>
-									<div class="LiveStatus">
-										<img class="LiveButton" data-twitch-channel="ChaosDispenser" data-online-image="../assets/Live_Icon.png" data-offline-image="../assets/Offline_Icon.png" >
-									</div>
-									<div class="StreamerInfo">
-										<span class="StreamerName" style="color:hsla(35,80%,60%,1.00);">ChaosDispenser</span>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="Streamer" onClick="setStreamer('Wizpirio')">
-									<div class="Photo">
-										<img class="UniqueIcon" alt="../assets/SovLogo.png" src="../assets/profilepictures/Wizpirio.png" height="100%" width="100%" onerror="this.onerror=null;this.src=this.alt;"/>
-									</div>
-									<div class="LiveStatus">
-										<img class="LiveButton" data-twitch-channel="Wizpirio" data-online-image="../assets/Live_Icon.png" data-offline-image="../assets/Offline_Icon.png" >
-									</div>
-									<div class="StreamerInfo">
-										<span class="StreamerName" style="color:hsla(35,80%,60%,1.00);">Wizpirio</span>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="Streamer" onClick="setStreamer('CptBlowUpDoll')">
-									<div class="Photo">
-										<img class="UniqueIcon" alt="../assets/SovLogo.png" src="../assets/profilepictures/CptBlowUpDoll.png" height="100%" width="100%" onerror="this.onerror=null;this.src=this.alt;"/>
-									</div>
-									<div class="LiveStatus">
-										<img class="LiveButton" data-twitch-channel="CptBlowUpDoll" data-online-image="../assets/Live_Icon.png" data-offline-image="../assets/Offline_Icon.png" >
-									</div>
-									<div class="StreamerInfo">
-										<span class="StreamerName" style="color:hsla(35,80%,60%,1.00);">CptBlowUpDoll</span>
-									</div>
-								</div>
-							</li>
+							<script>
+									for(x= Math.ceil(Rank_4_Streamers.length/3); x < Math.ceil(Rank_4_Streamers.length/3*2); x++)
+									{
+										document.write(
+											"<li>" + 
+												"<div class='Streamer' onClick='setStreamer(&quot;" + Rank_4_Streamers[x] + "&quot;)'>" +
+													"<div class='Photo'>" +
+														"<img class='UniqueIcon' alt='../assets/SovLogo.png' src='../assets/profilepictures/" + Rank_4_Streamers[x] + ".png' height='100%' width='100%' onerror='this.onerror=null;this.src=this.alt;'/>" +
+													"</div>" +
+													"<div class='LiveStatus'>" +
+														"<img class='LiveButton' data-twitch-channel='" + Rank_4_Streamers[x] + "' data-online-image='../assets/Live_Icon.png' data-offline-image='../assets/Offline_Icon.png'/>" +
+													"</div>" +
+													"<div class='StreamerInfo'>" +
+														"<span class='StreamerName'  style='color:hsla(35,80%,60%,1.00);'>" + Rank_4_Streamers[x] + "</span>" +
+													"</div>" +
+												"</div>" +
+											"</li>");
+									}
+							</script>
 						</ul>
 					</div>
-					<div class="Column" style="width: 450px; height: 1100px; left: 1000px; top: 50px; position: absolute;">
+					<div class="Column" style="width: 32%; height: 1100px; right: 1%; top: 4%; position: absolute;">
 						<ul style="list-style-type: none;">
-							<li>
-								<div class="Streamer" onClick="setStreamer('jaxmaru')">
-									<div class="Photo">
-										<img class="UniqueIcon" alt="../assets/SovLogo.png" src="../assets/profilepictures/jaxmaru.png" height="100%" width="100%" onerror="this.onerror=null;this.src=this.alt;"/>
-									</div>
-									<div class="LiveStatus">
-										<img class="LiveButton" data-twitch-channel="jaxmaru" data-online-image="../assets/Live_Icon.png" data-offline-image="../assets/Offline_Icon.png" >
-									</div>
-									<div class="StreamerInfo">
-										<span class="StreamerName"  style="color:hsla(35,80%,60%,1.00);">jaxmaru</span>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="Streamer" onClick="setStreamer('cmdrnade')">
-									<div class="Photo">
-										<img class="UniqueIcon" alt="../assets/SovLogo.png" src="../assets/profilepictures/cmdrnade.png" height="100%" width="100%" onerror="this.onerror=null;this.src=this.alt;"/>
-									</div>
-									<div class="LiveStatus">
-										<img class="LiveButton" data-twitch-channel="cmdrnade" data-online-image="../assets/Live_Icon.png" data-offline-image="../assets/Offline_Icon.png" >
-									</div>
-									<div class="StreamerInfo">
-										<span class="StreamerName" style="color:hsla(35,80%,60%,1.00);">cmdrnade</span>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="Streamer" onClick="setStreamer('bognogus')">
-									<div class="Photo">
-										<img class="UniqueIcon" alt="../assets/SovLogo.png" src="../assets/profilepictures/bognogus.png" height="100%" width="100%" onerror="this.onerror=null;this.src=this.alt;"/>
-									</div>
-									<div class="LiveStatus">
-										<img class="LiveButton" data-twitch-channel="bognogus" data-online-image="../assets/Live_Icon.png" data-offline-image="../assets/Offline_Icon.png" >
-									</div>
-									<div class="StreamerInfo">
-										<span class="StreamerName" style="color:hsla(35,80%,60%,1.00);">bognogus</span>
-									</div>
-								</div>
-							</li>
+							<script>
+									for(x= Math.ceil(Rank_4_Streamers.length/3*2); x < Math.ceil(Rank_4_Streamers.length); x++)
+									{
+										document.write(
+											"<li>" + 
+												"<div class='Streamer' onClick='setStreamer(&quot;" + Rank_4_Streamers[x] + "&quot;)'>" +
+													"<div class='Photo'>" +
+														"<img class='UniqueIcon' alt='../assets/SovLogo.png' src='../assets/profilepictures/" + Rank_4_Streamers[x] + ".png' height='100%' width='100%' onerror='this.onerror=null;this.src=this.alt;'/>" +
+													"</div>" +
+													"<div class='LiveStatus'>" +
+														"<img class='LiveButton' data-twitch-channel='" + Rank_4_Streamers[x] + "' data-online-image='../assets/Live_Icon.png' data-offline-image='../assets/Offline_Icon.png'/>" +
+													"</div>" +
+													"<div class='StreamerInfo'>" +
+														"<span class='StreamerName'  style='color:hsla(35,80%,60%,1.00);'>" + Rank_4_Streamers[x] + "</span>" +
+													"</div>" +
+												"</div>" +
+											"</li>");
+									}
+							</script>
 						</ul>
 					</div>
 				</div>
-					<div id="page4">
-					<div class="Column" style="width: 450px; height: 1100px; left: 50px; top: 50px; position: absolute;">
+					<div id="page5" class="page">
+					<div class="Column" style="width: 32%; height: 1100px; left: 2%; top: 4%; position: absolute;">
 						<ul style="list-style-type: none;">
-							<li>
-								<div class="Streamer" onClick="setStreamer('Loyallte')">
-									<div class="Photo">
-										<img class="UniqueIcon" alt="../assets/SovLogo.png" src="../assets/profilepictures/Loyallte.png" height="100%" width="100%" onerror="this.onerror=null;this.src=this.alt;"/>
-									</div>
-									<div class="LiveStatus">
-										<img class="LiveButton" data-twitch-channel="Loyallte" data-online-image="../assets/Live_Icon.png" data-offline-image="../assets/Offline_Icon.png" >
-									</div>
-									<div class="StreamerInfo">
-										<span class="StreamerName" style="color:hsla(103,49%,31%,1.00);">Loyallte</span>
-									</div>
-								</div>
-							</li>
+							<script>
+									for(x=0; x < Math.ceil(Rank_2_Streamers.length/3); x++)
+									{
+										document.write(
+											"<li>" + 
+												"<div class='Streamer' onClick='setStreamer(&quot;" + Rank_2_Streamers[x] + "&quot;)'>" +
+													"<div class='Photo'>" +
+														"<img class='UniqueIcon' alt='../assets/SovLogo.png' src='../assets/profilepictures/" + Rank_2_Streamers[x] + ".png' height='100%' width='100%' onerror='this.onerror=null;this.src=this.alt;'/>" +
+													"</div>" +
+													"<div class='LiveStatus'>" +
+														"<img class='LiveButton' data-twitch-channel='" + Rank_2_Streamers[x] + "' data-online-image='../assets/Live_Icon.png' data-offline-image='../assets/Offline_Icon.png'/>" +
+													"</div>" +
+													"<div class='StreamerInfo'>" +
+														"<span class='StreamerName'  style='color:hsla(103,49%,31%,1.00);'>" + Rank_2_Streamers[x] + "</span>" +
+													"</div>" +
+												"</div>" +
+											"</li>");
+									}
+							</script>
 						</ul>
 					</div>
-					<div class="Column" style="width: 450px; height: 1100px; left: 530px; top: 50px; position: absolute;">
+					<div class="Column" style="width: 32%; height: 1100px; left: 34.5%; top: 4%; position: absolute;">
 						<ul style="list-style-type: none;">
-							<li>
-								<div class="Streamer" onClick="setStreamer('Faabmaster')">
-									<div class="Photo">
-										<img class="UniqueIcon" alt="../assets/SovLogo.png" src="../assets/profilepictures/Faabmaster.png" height="100%" width="100%" onerror="this.onerror=null;this.src=this.alt;"/>
-									</div>
-									<div class="LiveStatus">
-										<img class="LiveButton" data-twitch-channel="Faabmaster" data-online-image="../assets/Live_Icon.png" data-offline-image="../assets/Offline_Icon.png" >
-									</div>
-									<div class="StreamerInfo">
-										<span class="StreamerName" style="color:hsla(103,49%,31%,1.00);">Faabmaster</span>
-									</div>
-								</div>
-							</li>
+							<script>
+									for(x= Math.ceil(Rank_2_Streamers.length/3); x < Math.ceil(Rank_2_Streamers.length/3*2); x++)
+									{
+										document.write(
+											"<li>" + 
+												"<div class='Streamer' onClick='setStreamer(&quot;" + Rank_2_Streamers[x] + "&quot;)'>" +
+													"<div class='Photo'>" +
+														"<img class='UniqueIcon' alt='../assets/SovLogo.png' src='../assets/profilepictures/" + Rank_2_Streamers[x] + ".png' height='100%' width='100%' onerror='this.onerror=null;this.src=this.alt;'/>" +
+													"</div>" +
+													"<div class='LiveStatus'>" +
+														"<img class='LiveButton' data-twitch-channel='" + Rank_2_Streamers[x] + "' data-online-image='../assets/Live_Icon.png' data-offline-image='../assets/Offline_Icon.png'/>" +
+													"</div>" +
+													"<div class='StreamerInfo'>" +
+														"<span class='StreamerName'  style='color:hsla(103,49%,31%,1.00);'>" + Rank_2_Streamers[x] + "</span>" +
+													"</div>" +
+												"</div>" +
+											"</li>");
+									}
+							</script>
 						</ul>
 					</div>
-					<div class="Column" style="width: 450px; height: 1100px; left: 1000px; top: 50px; position: absolute;">
+					<div class="Column" style="width: 32%; height: 1100px; right: 1%; top: 4%; position: absolute;">
 						<ul style="list-style-type: none;">
-							<li>
-								<div class="Streamer" onClick="setStreamer('Izehouze')">
-									<div class="Photo">
-										<img class="UniqueIcon" alt="../assets/SovLogo.png" src="../assets/profilepictures/Izehouze.png" height="100%" width="100%" onerror="this.onerror=null;this.src=this.alt;"/>
-									</div>
-									<div class="LiveStatus">
-										<img class="LiveButton" data-twitch-channel="Izehouze" data-online-image="../assets/Live_Icon.png" data-offline-image="../assets/Offline_Icon.png" >
-									</div>
-									<div class="StreamerInfo">
-										<span class="StreamerName"  style="color:hsla(103,49%,31%,1.00);">Izehouze</span>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-					<div id="page5">
-					<div class="Column" style="width: 450px; height: 1100px; left: 50px; top: 50px; position: absolute;">
-						<ul style="list-style-type: none;">
-							<li>
-								<div class="Streamer" onClick="setStreamer('Kongatron')">
-									<div class="Photo">
-										<img class="UniqueIcon" alt="../assets/SovLogo.png" src="../assets/profilepictures/Kongatron.png" height="100%" width="100%" onerror="this.onerror=null;this.src=this.alt;"/>
-									</div>
-									<div class="LiveStatus">
-										<img class="LiveButton" data-twitch-channel="Kongatron" data-online-image="../assets/Live_Icon.png" data-offline-image="../assets/Offline_Icon.png" >
-									</div>
-									<div class="StreamerInfo">
-										<span class="StreamerName" style="color:hsla(211,64%,36%,1.00);">Kongatron</span>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-					<div class="Column" style="width: 450px; height: 1100px; left: 530px; top: 50px; position: absolute;">
-						<ul style="list-style-type: none;">
-							<li>
-								<div class="Streamer" onClick="setStreamer('LanceUppercut_CS')">
-									<div class="Photo">
-										<img class="UniqueIcon" alt="../assets/SovLogo.png" src="../assets/profilepictures/LanceUppercut_CS.png" height="100%" width="100%" onerror="this.onerror=null;this.src=this.alt;"/>
-									</div>
-									<div class="LiveStatus">
-										<img class="LiveButton" data-twitch-channel="LanceUppercut_CS" data-online-image="../assets/Live_Icon.png" data-offline-image="../assets/Offline_Icon.png" >
-									</div>
-									<div class="StreamerInfo">
-										<span class="StreamerName" style="color:hsla(211,64%,36%,1.00);">LanceUppercut_CS</span>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-					<div class="Column" style="width: 450px; height: 1100px; left: 1000px; top: 50px; position: absolute;">
-						<ul style="list-style-type: none;">
-							
+							<script>
+									for(x= Math.ceil(Rank_2_Streamers.length/3*2); x < Math.ceil(Rank_2_Streamers.length); x++)
+									{
+										document.write(
+											"<li>" + 
+												"<div class='Streamer' onClick='setStreamer(&quot;" + Rank_2_Streamers[x] + "&quot;)'>" +
+													"<div class='Photo'>" +
+														"<img class='UniqueIcon' alt='../assets/SovLogo.png' src='../assets/profilepictures/" + Rank_2_Streamers[x] + ".png' height='100%' width='100%' onerror='this.onerror=null;this.src=this.alt;'/>" +
+													"</div>" +
+													"<div class='LiveStatus'>" +
+														"<img class='LiveButton' data-twitch-channel='" + Rank_2_Streamers[x] + "' data-online-image='../assets/Live_Icon.png' data-offline-image='../assets/Offline_Icon.png'/>" +
+													"</div>" +
+													"<div class='StreamerInfo'>" +
+														"<span class='StreamerName'  style='color:hsla(103,49%,31%,1.00);'>" + Rank_2_Streamers[x] + "</span>" +
+													"</div>" +
+												"</div>" +
+											"</li>");
+									}
+							</script>
 						</ul>
 					</div>
 				</div>
-				
-				
+					<div id="page6" class="page">
+					<div class="Column" style="width: 32%; height: 1100px; left: 2%; top: 4%; position: absolute;">
+						<ul style="list-style-type: none;">
+							<script>
+									for(x=0; x < Math.ceil(Rank_1_Streamers.length/3); x++)
+									{
+										document.write(
+											"<li>" + 
+												"<div class='Streamer' onClick='setStreamer(&quot;" + Rank_1_Streamers[x] + "&quot;)'>" +
+													"<div class='Photo'>" +
+														"<img class='UniqueIcon' alt='../assets/SovLogo.png' src='../assets/profilepictures/" + Rank_1_Streamers[x] + ".png' height='100%' width='100%' onerror='this.onerror=null;this.src=this.alt;'/>" +
+													"</div>" +
+													"<div class='LiveStatus'>" +
+														"<img class='LiveButton' data-twitch-channel='" + Rank_1_Streamers[x] + "' data-online-image='../assets/Live_Icon.png' data-offline-image='../assets/Offline_Icon.png'/>" +
+													"</div>" +
+													"<div class='StreamerInfo'>" +
+														"<span class='StreamerName'  style='color:#215A96;'>" + Rank_1_Streamers[x] + "</span>" +
+													"</div>" +
+												"</div>" +
+											"</li>");
+									}
+							</script>
+						</ul>
+					</div>
+					<div class="Column" style="width: 32%; height: 1100px; left: 34.5%; top: 4%; position: absolute;">
+						<ul style="list-style-type: none;">
+							<script>
+									for(x= Math.ceil(Rank_1_Streamers.length/3); x < Math.ceil(Rank_1_Streamers.length/3*2); x++)
+									{
+										document.write(
+											"<li>" + 
+												"<div class='Streamer' onClick='setStreamer(&quot;" + Rank_1_Streamers[x] + "&quot;)'>" +
+													"<div class='Photo'>" +
+														"<img class='UniqueIcon' alt='../assets/SovLogo.png' src='../assets/profilepictures/" + Rank_1_Streamers[x] + ".png' height='100%' width='100%' onerror='this.onerror=null;this.src=this.alt;'/>" +
+													"</div>" +
+													"<div class='LiveStatus'>" +
+														"<img class='LiveButton' data-twitch-channel='" + Rank_1_Streamers[x] + "' data-online-image='../assets/Live_Icon.png' data-offline-image='../assets/Offline_Icon.png'/>" +
+													"</div>" +
+													"<div class='StreamerInfo'>" +
+														"<span class='StreamerName'  style='color:#215A96;'>" + Rank_1_Streamers[x] + "</span>" +
+													"</div>" +
+												"</div>" +
+											"</li>");
+									}
+							</script>
+						</ul>
+					</div>
+					<div class="Column" style="width: 32%; height: 1100px; right: 1%; top: 4%; position: absolute;">
+						<ul style="list-style-type: none;">
+							<script>
+									for(x= Math.ceil(Rank_1_Streamers.length/3*2); x < Math.ceil(Rank_1_Streamers.length); x++)
+									{
+										document.write(
+											"<li>" + 
+												"<div class='Streamer' onClick='setStreamer(&quot;" + Rank_1_Streamers[x] + "&quot;)'>" +
+													"<div class='Photo'>" +
+														"<img class='UniqueIcon' alt='../assets/SovLogo.png' src='../assets/profilepictures/" + Rank_1_Streamers[x] + ".png' height='100%' width='100%' onerror='this.onerror=null;this.src=this.alt;'/>" +
+													"</div>" +
+													"<div class='LiveStatus'>" +
+														"<img class='LiveButton' data-twitch-channel='" + Rank_1_Streamers[x] + "' data-online-image='../assets/Live_Icon.png' data-offline-image='../assets/Offline_Icon.png'/>" +
+													"</div>" +
+													"<div class='StreamerInfo'>" +
+														"<span class='StreamerName'  style='color:#215A96;'>" + Rank_1_Streamers[x] + "</span>" +
+													"</div>" +
+												"</div>" +
+											"</li>");
+									}
+							</script>
+						</ul>
+					</div>
+				</div>
 					<div class="w3-center w3-padding-32">
     					<div class="paigination w3-dark-gray w3-text-black">
-      						<a class="w3-button" href="javascript: onClick=showPage('1')"><script>document.write(Rank_6);</script></a>
-     						<a class="w3-button" href="javascript: onClick=showPage('2')"><script>document.write(Rank_5);</script></a>
-      						<a class="w3-button" href="javascript: onClick=showPage('3')"><script>document.write(Rank_4);</script></a>
-      						<a class="w3-button" href="javascript: onClick=showPage('4')"><script>document.write(Rank_2);</script></a>
-      						<a class="w3-button" href="javascript: onClick=showPage('5')"><script>document.write(Rank_1);</script></a>
+      						<a class="w3-button" href="javascript: onClick=showPage('1')">Stream Team</a>
+      						<a class="w3-button" href="javascript: onClick=showPage('2')"><script>document.write(Rank_6);</script></a>
+     						<a class="w3-button" href="javascript: onClick=showPage('3')"><script>document.write(Rank_5);</script></a>
+      						<a class="w3-button" href="javascript: onClick=showPage('4')"><script>document.write(Rank_4);</script></a>
+      						<a class="w3-button" href="javascript: onClick=showPage('5')"><script>document.write(Rank_2);</script></a>
+      						<a class="w3-button" href="javascript: onClick=showPage('6')"><script>document.write(Rank_1);</script></a>
     					</div>
   					</div>
 				</div>
 		</div>
-		
-		<div class="topBanner">
-			<div id="Logo">
-				<img id="SovLogo" src="../assets/SovLogo.png"/>
-				<img id="SovGlow" src="../assets/SovLogo-Glow.gif"/>
-				<div id="SovAlert">
-					<div id="InnerBorder">
-						<p id="AlertText"><script>document.write(Alert_Description);</script></p>
-					</div>
-				</div>
-			</div>
-				<div id="LeftNavigation">
-					<ul>
-  						<li><a href="../pages/index.html">Home</a></li>
-  						<li><a href="../pages/About.html">About</a></li>
-  						<li class="Communitydropdown">
-  							<a href="#">Community</a>
-  							<div class="Communitydropdown-content">
-  								<a href="https://discord.gg/9aUPyFR">Discord</a>
-  								<a onclick="copyToClipboard('TS')" class="teamSpeakLink">TeamSpeak<span class="teamSpeakTooltip ">Copies IP to clipboard</span></a>
-  							</div>
-  						</li>
-						<li class="Streamersdropdown">
- 							<a class="active" href="#">Stream Tools</a>
- 							<div class="Streamersdropdown-content">
- 								<a href="https://obsproject.com/">OBS Studio</a>
- 								<a href="http://streamlabs.com/">StreamLabs</a>
- 								<a href="https://www.ankhbot.com/">AnkhBot</a>
- 							</div>
- 						</li>
-  						<!--<li><a href="http://tomparkes1993.co.uk/EDHelpDesk/index.html">Help Desk</a></li>-->
-  						<li><a href="../pages/Contact.html">Contact</a></li>
-  						<li><a href="../pages/Support.html">Support Us</a></li>
-					</ul> 
-				</div>
-				<div id="RightNavigation">
-					<ul>
-  						<!--<li><a href="../pages/ScienceDivision.html">B.o.S.S.</a></li>-->
-  						<li><a href="../pages/BGSDivision.html">B.G.S. Info</a></li>
-  						<!--<li><a href="../pages/HomeFleet.html">Home Fleet</a></li>-->
-					</ul> 
-				</div>
-		</div>
-		
+  						
 		<p id="TS" class="w3-hide">50.205.53.70</p>
+			
+		<audio id="squee" class="w3-hide" src="../audio/Fluttershy's squee.mp4" type="audio/mpeg"></audio>
+			
+		<span id="sideBarButton" style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; open</span>
+			
 		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 		<script src="https://cdn.rawgit.com/robbiemu/Twitch-Channel-Status/master/twitch-channel-status.js" data-interval="120" data-clientid="ji36kztzgizwvlq7oob8r7krk2ac1b" data-online-image="../assets/Live_Icon.png" data-offline-image="../assets/Offline_Icon.png" ></script>
 		<script src="https://ttv-api.s3.amazonaws.com/twitch.min.js"></script>
 	
 		</div>
+		
+		<div id="sideNavigation" class="sidenav">
+			<a href="../index.html">Home</a>
+  			<a href="../pages/About.html">About</a>
+  			<a href="https://discord.gg/thesovereignty" target="_blank">Discord</a>
+  			<a onclick="copyToClipboard('TS')" style="cursor:pointer;" class="teamSpeakLink">TeamSpeak <i style="font-size:24px" class="fa">&#xf0ea;</i></a>
+			<a class="active" href="../pages/Streamers.html">Streamers</a>
+			<a href="../pages/Contact.html">Contact</a>
+			<a href="../pages/Support.html">Support Us</a>
+			<img id="SovLogo" style="width:150px;height:120px;bottom:30px;left:20%;position:absolute;" src="../assets/SovLogo.png" alt=""/>
+			
+		</div>
+		
 	</body>
 </html>

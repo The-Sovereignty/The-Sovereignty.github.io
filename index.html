@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+		
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/sovHome.css">
+		<link rel="stylesheet" type="text/css" href="css/Sov.css">
+		<link rel="stylesheet" type="text/css" href="css/w3.css">
+		<link rel="icon" href="../assets/SovLogo.png" type="image/gif" sizes="596x596">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta charset="UTF-8">
+		<meta name="description" content="The Sovereignty, a group led by their prestigious leader Mavia Kain, was founded in June 3301 by a gathering of like minded individuals at Dalgarno Station, Kamchadals.">
+		<meta name="keywords" content="The Sovereignty, Streamers, Stream Team">
+		<meta name="author" content="Jasmine Moniz">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>The Sovereignty</title>
+	</head>
+	
+	<script src="js/SovData.js"></script>
+	
+	<img id="background" style="position: fixed; width: 100%; height: 100%;" src="https://pbs.twimg.com/profile_images/751168765191081988/3y6h5fRA_400x400.jpg" alt=""/>
+	
+	
+	<body>
+		<div id="sideNavigation" class="sidenav">
+			<a class="active" href="index.html">Home</a>
+  			<a href="pages/About.html">About</a>
+  			<a href="https://discord.gg/thesovereignty" target="_blank">Discord</a>
+  			<a onclick="copyToClipboard('TS')" style="cursor:pointer;" class="teamSpeakLink">TeamSpeak <i style="font-size:24px" class="fa">&#xf0ea;</i></a>
+  			<a href="pages/Streamers.html">Streamers</a>
+			<a href="pages/Contact.html">Contact</a>
+			<a href="pages/Support.html">Support Us</a>
+			<img id="SovLogo" style="width:150px;height:120px;bottom:30px;left:20%;position:absolute;" src="assets/SovLogo.png" alt=""/>
+			
+		</div>
+	
+		<div id="SovPage">
+			<div id="MainBody">
+				<div class="VideoFrame">
+					<div id="Video">
+						<img id="FillerImage" src="assets/greatergood.gif" alt=""/>
+						<iframe src=" " id="Unicorn" frameborder="0" style="display:none"></iframe>
+					</div>
+				</div>
+				
+				<!--<div class="StreamerVideoFrame">
+					<iframe id="streamOfWeek" src="https://player.twitch.tv/?channel=DJTruthsayer" frameborder="0"></iframe>
+				</div>
+				<div id="donate">
+						<a id="tributeDonate" href="https://www.justgiving.com/fundraising/frontier-developments"><span class="textAlign">Want to upgrade one of the tributes or make things harder on them? Donate here with an appropriate message and watch them squirm! Donation must be at least £10. Message should specify: Hunter Games Upgrade/Downgrade/Repair for named tribute</span></a>
+				</div>-->
+				
+			</div>
+			
+			<div id="socialandnews">
+				<div id="News">
+					<div id="InnerPanel">
+						<ul>
+							<script>
+									for(x=SovereignNewsTitle.length-1; x >= 0; x--)
+									{
+										document.write(
+											"<li>" +
+												"<div class='NewsPanel' style='margin: 13px;'>" +
+													"<div class='NewsTitle'>" +
+														SovereignNewsTitle[x] +
+													"</div>" +
+													"<div class='NewsPhoto'>" +
+														"<img src='assets/SovLogo.png' style='height: 100%; width: 100%; position: absolute;'/>" +
+													"</div>" +
+													"<div class='NewsDescription'>" +
+														SovereignNewsDescription[x] +
+													"</div>" +
+												"</div>" +
+											"</li>");
+									}
+								</script>
+						</ul>
+					</div>
+				</div>
+				<div id="Events">
+					<div id="Event">
+						<div id="EventImage">
+							<script>document.write(Event_Image);</script>
+						</div>
+						<div id="EventTitle">
+							<script>document.write(Event_Title);</script>
+						</div>
+						<div id="EventDescription">
+							<script>document.write(Event_Info);</script>
+						</div>
+					</div>
+				</div>
+				<div id="Twitter">
+					<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/search?q=from%3ATIIQSovereignty%20OR%20from%3AGraemeOnTheSofa%20OR%20from%3Amalictolsen%20OR%20from%3Amarvindarkstone%20OR%20from%3AKhalebDaarke%20OR%20from%3AFulsamee%20OR%20from%3AMrfiendly" data-widget-id="910221963611611136"></a>
+            		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				</div>
+			</div>
+		
+		<p id="TS" class="w3-hide">50.205.53.70</p>
+	
+		</div>
+		<span id="sideBarButton" style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; open</span>
+
+	</body>
+</html>

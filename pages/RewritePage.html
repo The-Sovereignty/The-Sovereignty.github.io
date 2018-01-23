@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<link rel="stylesheet" type="text/css" href="../css/sovHome.css">
+		<link rel="stylesheet" type="text/css" href="../css/Sov.css">
+		<link rel="stylesheet" type="text/css" href="../css/w3.css">
+		<link rel="icon" href="assets/SovLogo.png" type="image/gif" sizes="596x596">
+		<meta charset="UTF-8">
+		<meta name="description" content="The Sovereignty, a group led by their prestigious leader Mavia Kain, was founded in June 3301 by a gathering of like minded individuals at Dalgarno Station, Kamchadals.">
+		<meta name="keywords" content="The Sovereignty, Streamers, Stream Team">
+		<meta name="author" content="Jasmine Moniz">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>The Sovereignty</title>
+	</head>
+	
+	<script src="js/konami.js"></script>
+	<script src="js/copytext.js"></script>
+	<script src="js/changeBackground.js"></script>
+	<script src="js/SovData.js"></script>
+	
+	<img id="background" src="https://pbs.twimg.com/profile_images/751168765191081988/3y6h5fRA_400x400.jpg"/>
+	
+	<body>
+
+		<div id="sideNavigation" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9776;</a>
+			<a class="active" href="/pages/index.html">Home</a>
+  			<a href="pages/About.html">About</a>
+  			<a href="https://discord.gg/thesovereignty" target="_blank">Discord</a>
+  			<a onclick="copyToClipboard('TS')" class="teamSpeakLink">TeamSpeak<span class="teamSpeakTooltip ">Copies IP to clipboard</span></a>
+  			<a href="pages/Streamers.html">Streamers</a>
+			<a href="pages/Contact.html">Contact</a>
+			<a href="pages/Support.html">Support Us</a>
+			
+		</div>
+		
+		
+		<div id="SovPage">
+			<div id="MainBody">
+				<div class="VideoFrame">
+					<div id="Video">
+						<img id="FillerImage" src="assets/greatergood.gif"/>
+						<iframe src="pages/ " id="Unicorn" frameborder="0" style="display:none"></iframe>
+					</div>
+				</div>
+				
+				<!--<div class="StreamerVideoFrame">
+					<iframe id="streamOfWeek" src="https://player.twitch.tv/?channel=DJTruthsayer" frameborder="0"></iframe>
+				</div>
+				<div id="donate">
+						<a id="tributeDonate" href="https://www.justgiving.com/fundraising/frontier-developments"><span class="textAlign">Want to upgrade one of the tributes or make things harder on them? Donate here with an appropriate message and watch them squirm! Donation must be at least £10. Message should specify: Hunter Games Upgrade/Downgrade/Repair for named tribute</span></a>
+				</div>-->
+				
+			</div>
+		</div>
+	
+		
+		<span id="sideBarButton" style="font-size:30px;cursor:pointer; 
+	position: absolute; background: blue;" onclick="openNav()">&#9776; open</span>
+
+		<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+		}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
+		</script>
+     
+	</body>
+</html> 
